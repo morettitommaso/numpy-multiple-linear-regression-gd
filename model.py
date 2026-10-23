@@ -412,10 +412,7 @@ def predict_lr_model(model, X):
     # addo bias
     X = add_bias_column(X)
 
-    # applico linear predictor
-    linear_pred = predict_linear(X, model["weights"])
-
-    return linear_pred
+    return predict_linear(X, model["weights"])
 
 # Step 27 - score_lr_model (not yet solved)
 # TODO: implement
