@@ -81,8 +81,7 @@ def compute_feature_stats(X):
 def standardize_features(X, mean, std):
     # TODO: Apply z-score normalization using precomputed training mean and std.
 
-    for j in range(X.shape[1]):
-        X[:,j] = (X[:,j] - mean[j])/std[j]
+    return (X - mean) / std
 
     return X
 
