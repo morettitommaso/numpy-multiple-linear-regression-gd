@@ -83,8 +83,6 @@ def standardize_features(X, mean, std):
 
     return (X - mean) / std
 
-    return X
-
 # Step 5 - add_bias_column
 def add_bias_column(X):
     # TODO: Prepend a column of ones to feature matrix X
